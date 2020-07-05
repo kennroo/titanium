@@ -21,7 +21,9 @@
 
 //! Manage the JavaScript dialogs like alert, prompt, confirm and file.
 
-use std::env::{home_dir, temp_dir};
+use std::env::temp_dir;
+extern crate dirs;
+use self::dirs::home_dir;
 use std::path::Path;
 
 use mg::{

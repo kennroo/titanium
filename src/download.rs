@@ -19,7 +19,9 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-use std::env::{home_dir, temp_dir};
+use std::env::temp_dir;
+extern crate dirs;
+use self::dirs::home_dir;
 
 use glib::UserDirectory::Downloads;
 use glib::get_user_special_dir;
